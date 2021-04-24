@@ -1,11 +1,11 @@
-Instale o node:
+# Instale o node:
 
-# https://nodejs.org/en/download/
+https://nodejs.org/en/download/
 
-Instale os pacotes do projeto:
+# Instale os pacotes do projeto:
 
-# npm install
+npm install
 
-Para executar depois :
+# Para iniciar o servidor:
 
-# nodemon --exec "npm start" --signal SIGTERM
+nodemon --exec "npm start" --signal SIGTERM
