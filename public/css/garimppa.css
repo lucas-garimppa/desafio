@@ -1,0 +1,129 @@
+.botao {
+    min-width: 120px;
+    height: 48px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-weight: 500 !important;
+    background-color: #5E4785;
+    color: white;
+    border: 1px solid #5E4785 !important;
+}
+
+.botao:hover, .botao:focus {
+    border-radius: 8px;
+    font-weight: 500 !important;
+    background-color: white;
+    color: #5E4785;
+    border: 1px solid #5E4785 !important;
+    text-decoration: none;
+}
+
+.titulo {
+    color: black;
+    font-family: 'Poppins', Helvetica, Arial, serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.subtitulo {
+    color: black;
+    font-family: 'Poppins', Helvetica, Arial, serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 8px;
+}
+
+.link {
+    background-color: transparent;
+    color: rgba(56, 135, 255, 1);
+    font-family: 'Poppins', Helvetica, Arial, serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    margin: 12px 0px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: calc(100% - 5%);
+}
+
+.link:focus, .link:hover {
+    color: rgba(56, 135, 255, 1) !important;
+}
+
+.b-roxo {
+    background-color: #5E4785;
+}
+
+.b-roxo:hover, .b-roxo:focus {
+    background-color: white;
+    color: #5E4785;
+    border: 1px solid #5E4785 !important;
+}
+
+.b-vermelho {
+    background-color: #EB2E58;
+    border-color: #EB2E58 !important;
+}
+
+.b-vermelho:hover, .b-vermelho:focus {
+    background-color: white;
+    color: #EB2E58;
+    border-color: #EB2E58 !important;
+}
+
+.b-laranja {
+    background-color: #EB832D;
+    border-color: #EB832D !important;
+}
+
+.b-laranja:hover, .b-laranja:focus {
+    background-color: white;
+    color: #EB832D;
+    border-color: #EB832D !important;
+}
+
+.b-vermelho:disabled, .b-roxo:disabled, .b-laranja:disabled {
+    border-color: #444 !important;
+}
+
+.negrito {
+    font-weight: bold !important;
+}
+
+.negreto {
+    font-weight: 500 !important;
+}
+
+.branco {
+    color: white;
+}
+
+.vermelho {
+    color: #EB2E58;
+}
+
+.roxo, .a-roxo {
+    color: #5E4785;
+}
+
+.a-roxo:hover, .a-roxo:focus {
+    color: #925bf1;
+}
+
+.laranja {
+    color: #EB832D;
+}
+
+.preto {
+    color: black;
+}
+
+.verde {
+    color: #19aa2c;
+}
+
+.cinza {
+    color: #888;
+}

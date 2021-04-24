@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exemplo</title>
+    <%- include('head.ejs'); %>
+</head>
+
+<style>
+    <%- include('styles.css') %>
+</style>
+
+<body>
+    <div class="page home-page">
+        <div class="page-content d-flex align-items-stretch">
+            <div class="content-inner">
+                <div class="div-cabecalho">
+                    <div><i class="far fa-smile-wink"></i> desafio</div>
+                </div>
+                <div class="conteudo-wrapper">
+                    <h1>Olá, bem vindo!</h1>
+                    <h2>Este é um exercício para conhecer as habilidades dos candidatos a novos integrantes do time.</h2>
+                    <br>
+                    <div>
+                        A tarefa proposta é desenvolver um mini blog em que exista uma página para criação e gerenciamento
+                        dos posts e outra para exibição dos posts cadastrados. Posts devem conter um título, uma imagem e um texto. 
+                        Este <a target="_blank" href="https://blog.eureciclo.com.br/como-cumprir-a-logistica-reversa-prevista-pela-politica-nacional-de-residuos-solidos/">post</a> serve de exemplo do que é esperado.
+                    </div>
+                    <br>
+                    <div>
+                        <i class="fas fa-exclamation-circle vermelho"></i> É importante que as páginas desenvolvidas sejam responsivas. 80% dos nossos usuários utilizam nosso sistema através
+                        do celular.
+                    </div>
+                    <br>
+                    <div>
+                        Antes de começar, é recomendado estudar este projeto, reparando nos padrões e boas práticas
+                        utilizadas nele. Respeitar esses padrões, ou até sugerir melhorias, será o maior diferencial entre os candidatos.
+                    </div>
+                    <br>
+                    <div>
+                        <h3>Stack de desenvolvimento:</h3>
+                        <ul>Node // Express https://expressjs.com/</ul>
+                        <ul>Ejs https://ejs.co/</ul>
+                        <ul>Html // javascript // CSS</ul>
+                        <ul>Jquery https://jquery.com/</ul>
+                        <ul>Bootstrap https://getbootstrap.com/</ul>
+                        <ul>Parse Server https://parseplatform.org/.</ul>
+                        <ul>Hospedagem no Heroku https://www.heroku.com/.</ul>
+                    </div>
+                    <br>
+                    <div>
+                        <i class="fas fa-exclamation-circle vermelho"></i> Você irá precisar de um servidor Parse para armazenar os dados.
+                        Faça uma conta em https://www.back4app.com/ e crie uma instância/app. Depois atualize o arquivo .env do projeto
+                        com as respectivas chaves.
+                    </div>
+                    <br>
+                    <div>
+                        Para testar a sua configuração, pare e inicie novamente seu servidor e acesse este 
+                        <a target="_blank" href="http://localhost:3000/ws/exemplo?propriedade_1=teste&propriedade_2=testado">link</a>. Deverá ser exibido algo parecido
+                        com a imagem abaixo:
+                    </div>            
+                    <br>  
+                    <div><img src="/img/teste.png" width="400px"></div>      
+                    <br>
+                    <div>
+                        Você pode aprender mais sobre como trabalhar com Parse com javascript aqui: https://docs.parseplatform.org/js/guide/
+                    </div>
+                    <br>
+                    <div>
+                        <h3>Estrutura de diretórios do projeto:</h3>
+                        <ul>controller: classes de entrada dos webservices;</ul>
+                        <ul>database: classes de interface com a base de dados;</ul>
+                        <ul>views: front-end basicamente.</ul>
+                        <ul>public: pasta de acesso público do servidor;</ul>
+                        <ul>server: arquivos de configuração e uso interno do servidor;</ul>
+                    </div>
+                    <br>
+                    <div>
+                        <h3>Resumão das boas práticas utilizadas:</h3>
+                        <ul>
+                            Estrutura view >> controller >> database. É baseada no modelo MVC e objetivo principal é diminuir o acoplamento
+                            das estruturas do projeto. Imagine a situação em que o projeto precise trocar o banco de dados utilizado. O ideal seria
+                            apenas ter que adaptar os arquivos em 'database' com nenhuma ou mínima alteração dos arquivos 'controller' e 'view'. A 
+                            meta desse modelo é possibilitar esse tipo de alteração sem grande consequências em outras estruturas do projeto.
+                        </ul>
+                        <ul>Camelcase para nome de funções. Ex: <br><code>function getExemplo(){};</code></ul>
+                        <ul>Snakecase para nome de arquivos, variáveis, objetos e propriedades. Ex: <br><code>let minha_classe = null;</code></ul>
+                        <ul>Evitar abreviar nomes, podendoomitir preposições. Ex: <br>
+                            <code style="text-decoration: line-through">function relPesqQuant()</code><br>
+                            <code style="text-decoration: line-through">function relatorioDePequisaQuantitativo()</code><br>
+                            <code>function relatorioPequisaQuantitativo()</code><br>
+                        </ul>
+                        <ul>Sim, o CTO tem toc. O CEO também... ninguém é perfeito, mas já estamos nos tratando.</ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
