@@ -28,5 +28,5 @@ Contamos com sua entrega!
 
 www.garimppa.com.br
 
-www.garimppa.com.br/cadastro
+meubrecho.garimppa.com.br/cadastro
 
