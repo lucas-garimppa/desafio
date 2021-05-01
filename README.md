@@ -1,4 +1,4 @@
-# Desafio garimppa <3
+# Desafio garimppa :D
 
 ## Introdução
 
