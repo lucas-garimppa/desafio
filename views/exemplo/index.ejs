@@ -23,7 +23,7 @@
                     <br>
                     <div>
                         A tarefa proposta é desenvolver um <b>mini blog</b> em que exista <b>uma página</b> para criação e gerenciamento
-                        dos posts e <b>outra</b> para exibição dos posts cadastrados. Posts devem conter um título, uma imagem e um texto. 
+                        dos posts e <b>outra</b> para exibição dos posts cadastrados. Posts devem conter um título, uma imagem e um texto.
                         Este <a target="_blank" href="https://blog.eureciclo.com.br/como-cumprir-a-logistica-reversa-prevista-pela-politica-nacional-de-residuos-solidos/">post</a> serve de exemplo do modelo de post que é esperado.
                     </div>
                     <br>
@@ -55,12 +55,12 @@
                     </div>
                     <br>
                     <div>
-                        Para testar a sua configuração, pare e inicie novamente seu servidor e acesse este 
+                        Para testar a sua configuração, pare e inicie novamente seu servidor e acesse este
                         <a target="_blank" href="http://localhost:3000/ws/exemplo?propriedade_1=teste&propriedade_2=testado">link</a>. Deverá ser exibido algo parecido
                         com a imagem abaixo:
-                    </div>            
-                    <br>  
-                    <div><img src="/img/teste.png" width="400px"></div>      
+                    </div>
+                    <br>
+                    <div><img src="/img/teste.png" width="400px"></div>
                     <br>
                     <div>
                         Você pode aprender mais sobre como trabalhar com Parse com javascript aqui: https://docs.parseplatform.org/js/guide/
@@ -80,7 +80,7 @@
                         <ul>
                             Estrutura view >> controller >> database. É baseada no modelo MVC e objetivo principal é diminuir o acoplamento
                             das estruturas do projeto. Imagine a situação em que o projeto precise trocar o banco de dados utilizado. O ideal seria
-                            apenas ter que adaptar os arquivos em 'database' com nenhuma ou mínima alteração dos arquivos 'controller' e 'view'. A 
+                            apenas ter que adaptar os arquivos em 'database' com nenhuma ou mínima alteração dos arquivos 'controller' e 'view'. A
                             meta desse modelo é possibilitar esse tipo de alteração sem grande consequências em outras estruturas do projeto.
                         </ul>
                         <ul>Camelcase para nome de funções. Ex: <br><code>function getExemplo(){<br>&nbsp;};</code></ul>
@@ -104,3 +104,30 @@
         </div>
     </div>
 </body>
+
+<script>
+
+    // :: Exemplo de requisição ::
+
+    // esse webservice precisa estar com o Parse 
+    // configurado para funcionar
+
+    let params = {
+        propriedade_1: 'teste',
+        propriedade_2: 'teste'
+    }
+
+    $.ajax({
+        type: 'get',
+        dataType: 'json',
+        contentType: "application/json",
+        url: '/ws/exemplo',
+        data: params,
+        success: (resultado) => {
+            console.log(resultado);
+        },
+        error: (err) => {
+            console.log(err.responseText);
+        }
+    });
+</script>
