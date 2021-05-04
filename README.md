@@ -2,7 +2,7 @@
 
 ## Introdução
 
-Obrigado por se interessar pelo desafio garimppa. Faça o checkout do projeto, instale os pacotes e inicie o servidor. Em seguida acesse a página inicial para mais informações de como participar.
+Obrigado por se interessar pelo desafio garimppa. Faça o checkout do projeto, instale os pacotes e inicie o servidor. Em seguida acesse a página inicial para mais informações de como participar. O projeto é em node / JS vanilla.
 
 ### Instale os pacotes do projeto:
 
